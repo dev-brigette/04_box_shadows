@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Shadows</title>
+  <style>
+    .container {
+      display: flex;
+    }
+
+    .box {
+      padding: 1rem;
+      margin: 1rem;
+      background: rgb(247, 110, 61);
+      color: blanchedalmond;
+
+      /* offset-x | offset-y | color */
+      box-shadow: 10px 10px rgb(5, 71, 71);
+      /* offset-x | offset-y | blur-radious | color */
+      box-shadow: 10px 10px 20px rgb(5, 71, 71);
+      /* Negative values */
+      box-shadow: -10px -10px 20px rgb(5, 71, 71);
+      /* offset-x | offset-y | blur-radious | spread-radious | color */
+      box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.5);
+      /* inset | offset-x | offset-y | color */
+      box-shadow: inset -3px -3px teal;
+      /* Multiple Shadows */
+      box-shadow: 3px 3px 10px teal, -3px -3px 10px rgb(77, 11, 245);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <h3>Welcome</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aut. Quam expedita quod provident quidem.</p>
+    </div>
+    <div class="box">
+      <h3>Welcome</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aut. Quam expedita quod provident quidem.</p>
+    </div>
+    <div class="box">
+      <h3>Welcome</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aut. Quam expedita quod provident quidem.</p>
+    </div>
+  </div>
+  
+</body>
+</html>
